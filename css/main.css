@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white-color: #fff;
+  --logo-color: #000;
+  --primary-font-family: "Noto Serif", serif;
+  --font-size-xs: 0.5em;
+  --font-size-s: 1em;
+  --font-size-m: 1.25em;
+  --font-size-l: 1.5em;
+  --font-size-xl: 2em;
+}
+
+.dark-mode {
+  --white-color: #000;
+  --logo-color: #fff;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+  color: var(--logo-color);
+  text-align: center;
+}
+h1 span {
+  color: #ff0000;
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+  color: var(--logo-color);
+}
+h2 span {
+  color: #ff0000;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: var(--white-color);
+}
+
+header {
+  position: relative;
+  z-index: 99;
+}
+header nav {
+  position: absolute;
+  width: 60%;
+  transform: translateX(-100%);
+  transition: transform 350ms ease;
+}
+header nav ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-visible {
+  transform: translateX(0%);
+  height: 100vh;
+  width: fit-content;
+  padding: 0 1em;
+  background-color: black;
+  z-index: -1;
+}
+
+@media screen and (width >= 768px) {
+  header nav {
+    position: static;
+    transform: translateX(0%);
+  }
+  header nav ul {
+    flex-direction: row;
+  }
+  header nav li {
+    margin-right: 1em;
+  }
+  header li a {
+    font-size: var(--font-size-m);
+  }
+}
+@media screen and (width >= 1024px) {
+  header li a {
+    font-size: var(--font-size-l);
+  }
+}
+@media screen and (width >= 1440px) {
+  header li a {
+    font-size: var(--font-size-xl);
+  }
+}
+header {
+  display: grid;
+  grid-template-areas: "menu logo theme";
+  grid-template-columns: 50px auto 50px;
+  height: 100%;
+  background-color: var(--white-color);
+}
+
+header li a {
+  grid-area: logo;
+  text-align: center;
+}
+
+#menu-btn {
+  grid-area: menu;
+}
+
+#theme-btn {
+  grid-area: theme;
+}
+
+@media screen and (width >= 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  #menu-btn {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

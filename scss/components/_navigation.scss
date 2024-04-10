@@ -1,0 +1,65 @@
+header {
+  position: relative;
+  z-index: 99;
+  nav {
+    position: absolute;
+    width: 60%;
+    transform: translateX(-100%);
+    transition: transform 350ms ease;
+    ul {
+      list-style: none;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.nav-visible {
+  transform: translateX(0%);
+  height: 100vh;
+  width: fit-content;
+  padding: 0 1em;
+  background-color: black;
+  z-index: -1;
+}
+
+// For tablet
+@media screen and (width >= 768px) {
+  header {
+    nav {
+      position: static;
+      transform: translateX(0%);
+      ul {
+        flex-direction: row;
+      }
+      li {
+        margin-right: 1em;
+      }
+    }
+    li {
+      a {
+        font-size: var(--font-size-m);
+      }
+  }
+}
+}
+@media screen and (width >= 1024px) {
+   header {
+    li {
+      a {
+        font-size: var(--font-size-l)
+    }
+   }
+}
+}
+@media screen and (width >= 1440px) {
+   header {
+    li {
+      a {
+        font-size: var(--font-size-xl)
+    }
+   }
+}
+}

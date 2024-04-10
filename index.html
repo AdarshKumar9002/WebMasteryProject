@@ -13,9 +13,67 @@
       rel="stylesheet"
     />
     <!-- CSS File -->
+    <link rel="stylesheet" href="./css/icons-style.css">
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+
+    <!-- Header -->
+    <header>
+
+        <!-- Logo -->
+        <a href="./index.html"><h1><span>A</span>darsh</h1></a>
+
+        <!-- Navigation Menu -->
+        <nav data-visible="false">
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="language.html">Language</a></li>
+            </ul>
+        </nav>
+
+        <!-- Menu Button -->
+        <button id="menu-btn" class="menu-icon-open" aria-label="Menu Button" aria-expanded="false"></button>
+
+        <!-- Theme Button -->
+        <button id="theme-btn" class="dark-mode-icon" aria-label="Theme Button"></button>
+    </header>
+
+    <main>
+
+        <!-- Language Section -->
+        <section>
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JS</button>
+            <button>Others</button>
+        </section>
+
+        <!-- Post/Blog section -->
+        <article class="recent__posts">
+            <div>Currently nothing is posted.</div>
+        </article>
+
+        <!-- Project Section -->
+        <section>
+            <div>Currently no project is posted.</div>
+        </section>
+    </main>
+    <footer>
+         <!-- Logo -->
+         <a href="./index.html"><h2><span>A</span>darsh</h2></a>
+
+         <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="language.html">Language</a></li>
+            </ul>
+        </nav>
+    </footer>
+
     <!-- JS File -->
     <script type="module" src="./js/script.js"></script>
   </body>

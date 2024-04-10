@@ -1,0 +1,25 @@
+:root {
+  --icon-colors-primary: #fff;
+  --icon-colors-secondry: #000;
+  --code-icon-color:#304ffd;
+}
+.dark-mode {
+  --icon-colors-primary: #000;
+  --icon-colors-secondry: #fff;
+}
+.svg-common-properties {
+  fill: var(--icon-colors-secondry);
+  width: 25px;
+}
+.scroll--header .menuAndTheme-icons {
+  fill: var(--icon-colors-secondry);
+}
+.nav-visible + button .svg-common-properties {
+  fill: var(--icon-colors-primary);
+}
+.socialMedia-icons {
+  fill: var(--icon-colors-secondry);
+}
+footer .svg-common-properties {
+  fill: var(--icon-colors-primary);
+}

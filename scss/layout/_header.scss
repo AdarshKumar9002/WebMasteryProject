@@ -1,0 +1,31 @@
+header {
+  display: grid;
+  grid-template-areas: "menu logo theme";
+  grid-template-columns: 50px auto 50px;
+  height: 100%;
+  background-color: var(--white-color);
+}
+header {
+  li {
+    a {
+      grid-area: logo;
+      text-align: center;
+    }
+  }
+}
+#menu-btn {
+  grid-area: menu;
+}
+#theme-btn {
+  grid-area: theme;
+}
+
+@media screen and (width >= 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  #menu-btn {
+    display: none;
+  }
+}
