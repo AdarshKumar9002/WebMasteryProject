@@ -1,3 +1,4 @@
+// Header Nav
 header {
   position: relative;
   z-index: 99;
@@ -24,7 +25,21 @@ header {
   background-color: black;
   z-index: -1;
 }
-
+// Footer Nav
+footer {
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    li {
+      margin-right: 1em;
+    }
+  }
+}
 // For tablet
 @media screen and (width >= 768px) {
   header {
@@ -42,24 +57,24 @@ header {
       a {
         font-size: var(--font-size-m);
       }
+    }
   }
 }
-}
 @media screen and (width >= 1024px) {
-   header {
+  header {
     li {
       a {
-        font-size: var(--font-size-l)
+        font-size: var(--font-size-l);
+      }
     }
-   }
-}
+  }
 }
 @media screen and (width >= 1440px) {
-   header {
+  header {
     li {
       a {
-        font-size: var(--font-size-xl)
+        font-size: var(--font-size-xl);
+      }
     }
-   }
-}
+  }
 }
