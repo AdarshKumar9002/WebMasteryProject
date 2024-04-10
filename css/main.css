@@ -29,10 +29,14 @@ h1 span {
 }
 
 h2 {
+  font-size: var(--font-size-l);
+}
+
+h3 {
   font-size: var(--font-size-xl);
   color: var(--logo-color);
 }
-h2 span {
+h3 span {
   color: #ff0000;
 }
 
@@ -131,6 +135,55 @@ header li a {
   #menu-btn {
     display: none;
   }
+}
+.choseLang h2 {
+  text-align: center;
+}
+.choseLang > div {
+  display: flex;
+  justify-content: space-evenly;
+  height: 5rem;
+}
+.choseLang > div > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+.choseLang > div :nth-child(1) {
+  background-color: orangered;
+}
+.choseLang > div :nth-child(2) {
+  background-color: blue;
+}
+.choseLang > div :nth-child(3) {
+  background-color: yellow;
+}
+.choseLang > div :nth-child(4) {
+  background-color: green;
+}
+
+main article {
+  height: 10rem;
+  border: 2px solid blue;
+  background-color: gray;
+}
+main article > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+main :last-child {
+  height: 10rem;
+  border: 2px solid blue;
+  background-color: gray;
+}
+main :last-child > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

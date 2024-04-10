@@ -1,0 +1,56 @@
+.choseLang {
+    h2 {
+        text-align: center;
+    }
+  > div {
+    display: flex;
+    justify-content: space-evenly;
+    height: 5rem;
+    > button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+    }
+    :nth-child(1) {
+      background-color: orangered;
+    }
+    :nth-child(2) {
+      background-color: blue;
+    }
+    :nth-child(3) {
+      background-color: yellow;
+    }
+    :nth-child(4) {
+      background-color: green;
+    }
+  }
+}
+
+main {
+    article {
+        height: 10rem;
+        border: 2px solid blue;
+        background-color: gray;
+
+        >div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    }
+    :last-child {
+        height: 10rem;
+        border: 2px solid blue;
+        background-color: gray;
+
+        >div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    }
+  
+}
