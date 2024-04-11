@@ -6,6 +6,7 @@
 :root {
   --white-color: #fff;
   --logo-color: #000;
+  --font-color-primary: #000;
   --primary-font-family: "Noto Serif", serif;
   --font-size-xs: 0.5em;
   --font-size-s: 1em;
@@ -17,6 +18,7 @@
 .dark-mode {
   --white-color: #000;
   --logo-color: #fff;
+  --font-color-primary: #fff;
 }
 
 h1 {
@@ -51,6 +53,7 @@ a {
 
 body {
   background: var(--white-color);
+  color: var(--font-color-primary);
 }
 
 header {
@@ -155,7 +158,7 @@ header li a {
   justify-content: space-evenly;
   height: 5rem;
 }
-.choseLang > div > button {
+.choseLang > div > a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,23 +177,23 @@ header li a {
   background-color: green;
 }
 
-main article {
+.home-page article {
   height: 10rem;
   border: 2px solid blue;
   background-color: gray;
 }
-main article > div {
+.home-page article > div {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-main :last-child {
+.home-page article + section {
   height: 10rem;
   border: 2px solid blue;
   background-color: gray;
 }
-main :last-child > div {
+.home-page article + section > div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,6 +207,46 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.index-page main {
+  margin-top: 0.5em;
+}
+.index-page main h2 {
+  text-align: center;
+}
+.index-page ul {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.index-page li {
+  list-style: disc;
+}
+
+.content-page main {
+  padding: 1em 2em;
+}
+.content-page dt {
+  font-size: var(--font-size-l);
+  font-weight: 900;
+}
+.content-page dd {
+  font-size: var(--font-size-m);
+}
+
+@media screen and (width >= 1440px) {
+  .content-page main {
+    padding: 2em 3em;
+  }
+  .content-page dt {
+    font-size: var(--font-size-xl);
+  }
+  .content-page dd {
+    font-size: var(--font-size-l);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

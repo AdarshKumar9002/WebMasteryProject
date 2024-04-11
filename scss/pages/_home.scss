@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-evenly;
     height: 5rem;
-    > button {
+    > a {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,7 +27,7 @@
   }
 }
 
-main {
+.home-page {
     article {
         height: 10rem;
         border: 2px solid blue;
@@ -40,7 +40,7 @@ main {
             height: 100%;
         }
     }
-    :last-child {
+    article + section {
         height: 10rem;
         border: 2px solid blue;
         background-color: gray;

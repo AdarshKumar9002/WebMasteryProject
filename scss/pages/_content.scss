@@ -1,0 +1,27 @@
+.content-page {
+  main {
+    padding: 1em 2em;
+  }
+  dt {
+    font-size: var(--font-size-l);
+    font-weight: 900;
+  }
+  dd{
+    font-size: var(--font-size-m);
+  }
+}
+
+
+@media screen and (width >= 1440px) {
+  .content-page {
+    main {
+        padding: 2em 3em;
+    }
+  dt {
+    font-size: var(--font-size-xl);
+  }
+  dd{
+    font-size: var(--font-size-l);
+  }
+}
+}
